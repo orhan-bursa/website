@@ -39,6 +39,18 @@ const TECH_STACK_ASSETS = [
 		path: '/python.svg'
 	},
 	{
+		label: 'Vscode',
+		path: '/vscode.jpeg'
+	},
+	{
+		label: 'Vim',
+		path: '/vim.svg'
+	},
+	{
+		label: 'Neovim',
+		path: '/neovim.svg'
+	},
+	{
 		label: 'React',
 		path: '/react.svg'
 	},
@@ -49,6 +61,30 @@ const TECH_STACK_ASSETS = [
 	{
 		label: 'Tanstack',
 		path: '/tanstack.png'
+	},
+	{
+		label: 'PostgreSQl',
+		path: '/postgresql.svg'
+	},
+	{
+		label: 'shadcn',
+		path: '/shadcn.png'
+	},
+	{
+		label: 'SQLite',
+		path: '/sqlite.svg'
+	},
+	{
+		label: 'Typescript',
+		path: '/typescript.svg'
+	},
+	{
+		label: 'MongoDB',
+		path: '/mongo.svg'
+	},
+	{
+		label: 'Tailwind',
+		path: '/tailwind.svg'
 	}
 ]
 
