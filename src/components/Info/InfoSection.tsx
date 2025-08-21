@@ -79,6 +79,22 @@ const TECH_STACK_ASSETS = [
 		path: '/typescript.svg'
 	},
 	{
+		label: 'Mui',
+		path: '/mui.png'
+	},
+	{
+		label: 'KoaJs',
+		path: '/koa.png'
+	},
+	{
+		label: 'C#',
+		path: '/csharp.png'
+	},
+	{
+		label: '.NET',
+		path: '/dotnet.svg'
+	},
+	{
 		label: 'MongoDB',
 		path: '/mongo.svg'
 	},
