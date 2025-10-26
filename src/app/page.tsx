@@ -1,12 +1,16 @@
-import HeroSection from '@/components/Hero/HeroSection'
-import InfoSection from '@/components/Info/InfoSection'
+import About from '@/components/sections/About'
+import Hero from '@/components/sections/Hero'
+import Projects from '@/components/sections/Projects'
+import TechStack from '@/components/sections/TechStack'
 
 export default function Home() {
 	return (
-		<div className="bg-background flex h-full min-h-screen w-full min-w-screen flex-col items-center text-center">
-			<div className="flex h-full w-full max-w-3xl grow items-center justify-center gap-8">
-				<HeroSection />
-				<InfoSection />
+		<div className="bg-background flex h-full min-h-screen w-full min-w-screen flex-col items-center py-20 text-center">
+			<div className="mx-auto max-w-3xl">
+				<Hero />
+				<About />
+				<TechStack />
+				<Projects />
 			</div>
 		</div>
 	)

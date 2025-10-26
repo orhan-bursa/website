@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import PageSection from '../shared/PageSection'
 
 const LINKS = [
 	{
@@ -19,14 +20,12 @@ const LINKS = [
 	}
 ]
 
-export default function HeroSection() {
+export default function Hero() {
 	return (
-		<section className="w-1/2 max-w-1/2 px-4 text-start">
-			<h1 className="text mb-4 text-5xl">Orhan Bursa</h1>
-			<h2 className="text-foreground/90 mb-2 text-xl">
-				Fullstack developer, app developer and tool builder
-			</h2>
-			<div className="flex items-center gap-2">
+		<PageSection id="dev" className="mx-auto w-max text-center">
+			<h1 className="text mb-4 text-7xl font-bold">Orhan Bursa</h1>
+			<h2 className="text-foreground/90 mb-2 text-xl">Fullstack developer, app builder</h2>
+			<div className="flex items-center justify-center gap-2">
 				{LINKS.map((link, i) => (
 					<Link
 						key={link.label}
@@ -37,6 +36,6 @@ export default function HeroSection() {
 					</Link>
 				))}
 			</div>
-		</section>
+		</PageSection>
 	)
 }
