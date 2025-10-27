@@ -12,7 +12,8 @@ const PROJECTS = [
 		title: 'Hilal Visits',
 		description: 'Travel Blog',
 		stack: ['Nextjs', 'Notion API', 'Typescript', 'Tailwind'],
-		url: 'https://hilalvisits.com/'
+		url: 'https://hilalvisits.com/',
+		public: true
 	},
 	{
 		title: 'KLC Works',
@@ -30,9 +31,9 @@ export default function Projects() {
 	return (
 		<PageSection id="projects" className="text-start">
 			<SectionTitle title="projects" />
-			<div className="flex flex-col gap-3">
+			<div className="flex flex-col gap-4">
 				{PROJECTS.map((project, ind) => (
-					<div key={ind}>
+					<div key={ind} className="space-y-1">
 						<p className="text-xl font-semibold">{project.title}</p>
 						<p className="text-foreground-secondary text-sm">{project.description}</p>
 						<div className="flex flex-wrap gap-1">
@@ -42,6 +43,9 @@ export default function Projects() {
 								</span>
 							))}
 						</div>
+						<p className="text-foreground-secondary text-sm font-normal">
+							{project.public ? 'public' : 'private'}
+						</p>
 					</div>
 				))}
 			</div>
