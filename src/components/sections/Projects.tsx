@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import PageSection from '../shared/PageSection'
 import SectionTitle from '../shared/SectionTitle'
 
@@ -13,7 +14,8 @@ const PROJECTS = [
 		description: 'Travel Blog',
 		stack: ['Nextjs', 'Notion API', 'Typescript', 'Tailwind'],
 		url: 'https://hilalvisits.com/',
-		public: true
+		public: true,
+		repo_url: 'https://github.com/orhan-bursa/hilalvisits-web'
 	},
 	{
 		title: 'KLC Works',
@@ -24,7 +26,8 @@ const PROJECTS = [
 	{
 		title: 'Link Shelf',
 		description: 'Desktop App for Link Management',
-		stack: ['Electronjs', 'React', 'Vite', 'Typescript', 'Tailwind', 'Tanstack/query']
+		stack: ['Electronjs', 'React', 'Vite', 'Typescript', 'Tailwind', 'Tanstack/query'],
+		url: ''
 	}
 ]
 export default function Projects() {
@@ -34,7 +37,9 @@ export default function Projects() {
 			<div className="flex flex-col gap-4">
 				{PROJECTS.map((project, ind) => (
 					<div key={ind} className="space-y-1">
-						<p className="text-xl font-semibold">{project.title}</p>
+						<Link href={project.url} target="_blank">
+							<p className="text-xl font-semibold hover:underline">{project.title}</p>
+						</Link>
 						<p className="text-foreground-secondary text-sm">{project.description}</p>
 						<div className="flex flex-wrap gap-1">
 							{project.stack.map((s, i) => (
@@ -44,7 +49,18 @@ export default function Projects() {
 							))}
 						</div>
 						<p className="text-foreground-secondary text-sm font-normal">
-							{project.public ? 'public' : 'private'}
+							repo:{' '}
+							{project.public ? (
+								<Link
+									href={project.repo_url}
+									className="hover:text-foreground hover:underline"
+									target="_blank"
+								>
+									public
+								</Link>
+							) : (
+								'private'
+							)}
 						</p>
 					</div>
 				))}
