@@ -22,8 +22,8 @@ const LINKS = [
 
 export default function Hero() {
 	return (
-		<PageSection id="dev" className="mx-auto w-max text-center">
-			<h1 className="text mb-4 text-7xl font-bold">Orhan Bursa</h1>
+		<PageSection id="dev" className="font-alt mx-auto w-max text-center">
+			<h1 className="font-main mb-4 text-7xl font-bold tracking-tighter">Orhan Bursa</h1>
 			<h2 className="text-foreground/90 mb-2 text-xl">Fullstack developer, app builder</h2>
 			<div className="flex items-center justify-center gap-2">
 				{LINKS.map((link, i) => (

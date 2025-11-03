@@ -14,6 +14,8 @@
 }
 
 @theme inline {
+	--font-main: var(--font-main);
+	--font-alt: var(--font-alt);
 	--color-background: var(--background);
 	--color-background-secondary: var(--background-secondary);
 	--color-foreground: var(--foreground);
