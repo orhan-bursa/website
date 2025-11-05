@@ -5,7 +5,7 @@ import TechStack from '@/components/sections/TechStack'
 
 export default function Home() {
 	return (
-		<div className="bg-background flex h-full min-h-screen w-full min-w-screen flex-col items-center py-20 text-center">
+		<div className="bg-background flex h-full min-h-screen w-full flex-col items-center pt-20 text-center">
 			<div className="mx-auto max-w-3xl">
 				<Hero />
 				<About />

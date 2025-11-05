@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Geist, Oswald } from 'next/font/google'
 import './globals.css'
+import Footer from '@/components/sections/Footer'
 
 const fontAlt = Oswald({
 	variable: '--font-alt',
@@ -28,7 +29,10 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={`${fontMain.variable} ${fontAlt.variable} antialiased`}>
-				<main className="font-main">{children}</main>
+				<main className="font-main px-4">
+					{children}
+					<Footer />
+				</main>
 			</body>
 		</html>
 	)
