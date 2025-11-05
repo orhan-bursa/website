@@ -24,7 +24,7 @@ export default function Hero() {
 			</h1>
 			<h2 className="text-foreground/90 mb-2 text-xl">Fullstack developer, app builder</h2>
 			<div className="flex items-center justify-center gap-2">
-				{LINKS.map((link, i) => (
+				{LINKS.map(link => (
 					<Link
 						target="_blank"
 						key={link.label}

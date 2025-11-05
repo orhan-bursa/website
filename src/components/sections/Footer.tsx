@@ -46,7 +46,7 @@ export default function Footer() {
 
 					<p className="text-foreground/60">or reach out to me from</p>
 					<ul className="flex gap-2">
-						{LINKS.map((link, i) => (
+						{LINKS.map(link => (
 							<Link
 								target="_blank"
 								key={link.label}
