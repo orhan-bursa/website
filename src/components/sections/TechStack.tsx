@@ -83,7 +83,7 @@ const TECH_STACK_GROUPED = [
 			},
 			{
 				key: 'postgresql',
-				label: 'PostgreSQl'
+				label: 'PostgreSQL'
 			},
 			{
 				key: 'sqlite',

@@ -1,18 +1,13 @@
 import type { Metadata } from 'next'
-import { DM_Sans, Geist, Geist_Mono, Oswald } from 'next/font/google'
+import { Geist, Oswald } from 'next/font/google'
 import './globals.css'
 
-const geistSans = Geist({
-	variable: '--font-geist-sans',
-	subsets: ['latin']
-})
-
-const geistMono = Oswald({
+const fontAlt = Oswald({
 	variable: '--font-alt',
 	subsets: ['latin']
 })
 
-const dmSans = Geist({
+const fontMain = Geist({
 	variable: '--font-main',
 	weight: ['400', '500', '600', '700'],
 	style: ['normal'],
@@ -22,7 +17,7 @@ const dmSans = Geist({
 
 export const metadata: Metadata = {
 	title: 'Orhan Bursa',
-	description: 'Developer bio website'
+	description: 'fullstack developer, app builder'
 }
 
 export default function RootLayout({
@@ -32,7 +27,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${dmSans.variable} ${geistMono.variable} antialiased`}>
+			<body className={`${fontMain.variable} ${fontAlt.variable} antialiased`}>
 				<main className="font-main">{children}</main>
 			</body>
 		</html>
