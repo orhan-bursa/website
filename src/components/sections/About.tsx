@@ -27,7 +27,7 @@ export default function About() {
 					of desktops and favorite apps, then launch them at once when your computer boots.
 				</p>
 				<p>
-					I am also looking for oppourtunities to learn more about blockchain development stack,
+					I am also looking for opportunities to learn more about blockchain development stack,
 					specifically DeFi and DLT technologies.
 				</p>
 			</div>
