@@ -48,8 +48,9 @@ export default function Footer() {
 					<ul className="flex gap-2">
 						{LINKS.map(link => (
 							<Link
-								target="_blank"
 								key={link.label}
+								target="_blank"
+								rel="noopener noreferrer"
 								href={link.path}
 								className="text-foreground-secondary hover:text-foreground underline-offset-2 hover:underline"
 							>

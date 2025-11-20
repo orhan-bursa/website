@@ -28,6 +28,20 @@ const PROJECTS = [
 		description: 'Desktop App for Link Management',
 		stack: ['Electronjs', 'React', 'Vite', 'Typescript', 'Tailwind', 'Tanstack/query'],
 		url: ''
+	},
+	{
+		title: 'Launch Box',
+		description: 'Desktop App for Launching frequently used applications',
+		stack: [
+			'Electronjs',
+			'React',
+			'Vite',
+			'Typescript',
+			'Tailwind',
+			'Tanstack/query',
+			'Tanstack/router'
+		],
+		url: ''
 	}
 ]
 export default function Projects() {
@@ -37,9 +51,13 @@ export default function Projects() {
 			<div className="flex flex-col gap-4">
 				{PROJECTS.map((project, ind) => (
 					<div key={ind} className="space-y-1">
-						<Link href={project.url} target="_blank">
-							<p className="text-xl font-semibold hover:underline">{project.title}</p>
-						</Link>
+						{project.url ? (
+							<Link href={project.url} target="_blank">
+								<p className="text-xl font-semibold hover:underline">{project.title}</p>
+							</Link>
+						) : (
+							<p className="text-xl font-semibold select-none">{project.title}</p>
+						)}
 						<p className="text-foreground-secondary text-sm">{project.description}</p>
 						<div className="flex flex-wrap gap-1">
 							{project.stack.map((s, i) => (
@@ -55,6 +73,7 @@ export default function Projects() {
 									href={project.repo_url}
 									className="hover:text-foreground hover:underline"
 									target="_blank"
+									rel="noopener noreferrer"
 								>
 									public
 								</Link>
