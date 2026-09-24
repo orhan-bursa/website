@@ -54,6 +54,10 @@ const TECH_STACK_GROUPED = [
 				label: 'Node'
 			},
 			{
+				key: 'nestjs',
+				label: 'Nestjs'
+			},
+			{
 				key: 'express',
 				label: 'Express'
 			},
@@ -88,6 +92,10 @@ const TECH_STACK_GROUPED = [
 			{
 				key: 'sqlite',
 				label: 'SQLite'
+			},
+			{
+				key: 'supabase',
+				label: 'Supabase'
 			}
 		]
 	},

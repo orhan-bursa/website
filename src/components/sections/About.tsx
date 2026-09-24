@@ -15,20 +15,24 @@ export default function About() {
 						href={'https://recruspace.com'}
 						target="_blank"
 						rel="noopener noreferrer"
-						className="underline"
+						className="hover:text-foreground underline"
 					>
 						Recruspace
 					</Link>
-					, I primarily work on frontend development using Next.js, where I excel. In my free time,
-					I build desktop applications or explore other areas of technology.
+					, I primarily work on frontend development using Next.js. In my free time, I build web &
+					desktop applications or explore other areas of technology.
 				</p>
 				<p>
-					Currently I am working on Launch Box, a desktop app that helps you create an arrangement
-					of desktops and favorite apps, then launch them at once when your computer boots.
-				</p>
-				<p>
-					I am also looking for opportunities to learn more about blockchain development stack,
-					specifically DeFi and DLT technologies.
+					Currently I am working on{' '}
+					<Link
+						href={'https://www.pozset.com'}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="hover:text-foreground underline"
+					>
+						Pozset
+					</Link>
+					, a web app that helps you generate images for e-commerce, using Gemini.
 				</p>
 			</div>
 		</PageSection>

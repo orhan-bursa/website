@@ -4,6 +4,23 @@ import SectionTitle from '../shared/SectionTitle'
 
 const PROJECTS = [
 	{
+		title: 'Pozset',
+		description: 'Fashion & E-commerce Image Generator',
+		stack: [
+			'Nextjs',
+			'Typescript',
+			'Tailwind',
+			'Tanstack/query',
+			'Supabase',
+			'PostgreSQL',
+			'AWS',
+			'Gemini',
+			'Polar.sh',
+			'Stripe'
+		],
+		url: 'https://www.pozset.com/'
+	},
+	{
 		title: 'Hasret Ozan Sevim Website',
 		description: 'Researcher Portfolio & Blog',
 		stack: ['Nextjs', 'Notion API', 'Typescript', 'Tailwind', 'Tanstack/query'],
@@ -12,7 +29,7 @@ const PROJECTS = [
 	{
 		title: 'Hilal Visits',
 		description: 'Travel Blog',
-		stack: ['Nextjs', 'Notion API', 'Typescript', 'Tailwind'],
+		stack: ['Nextjs', 'Prismic CMS', 'Typescript', 'Tailwind'],
 		url: 'https://hilalvisits.com/',
 		public: true,
 		repo_url: 'https://github.com/orhan-bursa/hilalvisits-web'
